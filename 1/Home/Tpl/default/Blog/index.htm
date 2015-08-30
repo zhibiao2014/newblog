@@ -1,0 +1,95 @@
+<include file="Public:common_head" />
+<link rel="stylesheet" type="text/css" href="__CSSL__/style.css" />
+<script type="text/javascript" src="__JSL__/blog.js"></script>
+<script language="JavaScript">
+$(document).ready(
+function() {
+	var i = 0;
+	
+	$(window).scroll(
+			function() {
+				if ($(document).height() - $(document).scrollTop()- $(window).height() < 100) {
+					if ($('#rui-prompt').text() == '') {
+						loadArticle('/blog/getArticle','<{$flag}>', ++i);
+					}
+				}
+			});
+		});
+</script>
+<include file="Public:nav" />
+<div class="slider-wrapper piecemaker theme-default">
+	<!-- <div id="slider" class="wrap">Please install latest Flash player</div> -->
+</div>
+<!-- slider-wrapper -->
+
+<div id="tagline">
+	<div class="wrap">
+		<h3>记录生活中的酸甜苦辣！</h3>
+	</div>
+	<!-- end wrap -->
+</div>
+<!-- end tagline -->
+
+<div id="breadcrumbs">
+	<div class="wrap">
+		<p>
+			<a href="/">主页</a>博客
+		</p>
+	</div>
+	<!-- end wrap -->
+</div>
+<!-- end breadcrumbs -->
+
+<div id="content" class="home">
+	<div class="wrap">
+
+		<div id="page-full" class="c-12">
+			<div class="page-wrap">
+				<volist name='arclist' id='data'>
+				<div class="wrap-content">
+					<h2 class="entry-title">
+						<a style="color: #D54708;" href="<{$data.arcurl}>"
+							title="<{$data.title}>"><{$data.title}></a>
+					</h2>
+					<div class="entry-meta entry-header">
+						<span class="contentinfo_time"><{$data.createtime}></span> <span
+							class="contentinfo_category"><a style="color: #E41919"
+							href="<{$data.colurl}>" title="查看 <{$data.colname}> 中的全部文章"><{$data.colname}></a></span>
+						<span class="contentinfo_view"><{$data.click}>次点击</span> <span
+							class="contentinfo_comment"><{$data.commentnum}>条评论</span>
+						<!--END .entry-meta entry-header -->
+					</div>
+					<div class="about">
+						<p class="image">
+							<a href="<{$data.arcurl}>"><img
+								style="height: 200px; width: 317px;" title="" alt=""
+								src="__ASS__/image-about.jpg" /></a>
+						</p>
+						<div class="excerpt">
+							<p><{$data.description}>...</p>
+						</div>
+						<p class="actions" style="margin-top: 20px;">
+							<a class="button large" href="<{$data.arcurl}>" title=""><span
+								style="color: #8490a3; text-shadow: 1px 1px 0 #02E296;">阅读全文</span></a>
+							<a class="button large" href="<{$data.arcurl}>" title=""><span
+								style="color: #8490a3; text-shadow: 1px 1px 0 #02E296;">查看图片</span></a>
+						</p>
+					</div>
+					<!-- end about -->
+				</div>
+				</volist>
+				<!-- end wrap-content -->
+
+			</div>
+			<div id="content-btm">&nbsp;</div>
+            <div class="page-navigation" style="font-size:20px;display:none" id="rui-prompt"></div>
+			<!-- end page-wrap -->
+		</div>
+		<!-- end page-small -->
+
+
+	</div>
+	<!-- end wrap -->
+</div>
+<!-- end content -->
+<include file="Public:footer" />

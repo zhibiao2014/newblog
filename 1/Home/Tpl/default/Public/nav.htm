@@ -1,0 +1,35 @@
+</head>
+<body class="home">
+	<div id="header">
+		<div class="wrap">
+			<h1 class="logo">
+				<a href="<{:U('Index/index')}>"> <img src="__IMGL__/logo.png"
+					width="232" height="48" title="" alt="" />
+				</a>
+			</h1>
+			<a class="home-button" href="home-slider-fade.html" title="">首页</a>
+
+			<div id="main-navigation">
+				<ul class="dd-menu">
+					<li><a title="" href="about.html">关于</a></li>
+					<volist name="collist" id="data">
+					<li><a title="" href="<{$data.url}>"><{$data.colname}></a>
+						<ul>
+							<li class="arrow"></li> <{$data.submenu}>
+						</ul></li>
+					</volist>
+				</ul>
+				<!-- end dd-menu -->
+			</div>
+			<!-- end main-navigation-->
+
+
+			<div class="work-with-us">
+				<h3>一路相随</h3>
+				<a class="work-with-us-button" href="contact.html" title=""></a>
+			</div>
+			<!-- end work-with-us -->
+		</div>
+		<!-- end wrap -->
+	</div>
+	<!-- end header -->

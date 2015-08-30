@@ -99,9 +99,9 @@ jQuery(document).ready(function()
 
 	/* ============================ Sliders at Home page ============================= */	 	
 
- 	if(jQuery("#slider.nivoSlider").length>0){
- 		jQuery("#slider.nivoSlider").nivoSlider();
- 	}
+// 	if(jQuery("#slider.nivoSlider").length>0){
+// 		jQuery("#slider.nivoSlider").nivoSlider();
+// 	}
 
  	if(jQuery("#slider.fadeSlider ul").length>0){
  		jQuery("#slider.fadeSlider ul").anythingSlider({

@@ -1,0 +1,53 @@
+/*-----------------------------------------------------------------------------------*/
+/*	文章信息
+/*-----------------------------------------------------------------------------------*/
+.contentinfo_time {
+	background: url(../images/contentinfo.png) 0px 0px no-repeat;
+}
+
+.contentinfo_time:hover {
+	background: url(../images/contentinfo.png) 0px -24px no-repeat;
+	color: #444;
+}
+
+.contentinfo_category {
+	background: url(../images/contentinfo.png) 0px -47px no-repeat;
+}
+
+.contentinfo_category:hover {
+	background: url(../images/contentinfo.png) 0px -71px no-repeat;
+	color: #444;
+}
+
+.contentinfo_view {
+	background: url(../images/contentinfo.png) 0px -142px no-repeat;
+}
+
+.contentinfo_view:hover {
+	background: url(../images/contentinfo.png) 0px -163px no-repeat;
+	color: #444;
+}
+
+.contentinfo_comment {
+	background: url(../images/contentinfo.png) 0px -95px no-repeat;
+}
+
+.contentinfo_comment:hover {
+	background: url(../images/contentinfo.png) 0px -119px no-repeat;
+	color: #444;
+}
+.entry-meta{
+	margin-bottom: 18px;
+}
+.entry-meta span {
+	font-family: 'doublevregular',"Microsoft YaHei","Trebuchet MS",Arial,Verdana,Tahoma,sans-serif;
+	color: #aaa;
+	line-height: 13px;
+	display: inline-block;
+	height: 16px;
+	padding-left: 18px;
+	margin-right: 16px;
+	-webkit-transition-duration: 0.3s, 0.3s;
+	-moz-transition-duration: 0.3s, 0.3s;
+	-o-transition-duration: 0.3s, 0.3s;
+}

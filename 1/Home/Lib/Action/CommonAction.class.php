@@ -50,7 +50,7 @@ class CommonAction extends Action{
 				return '';
 			}
 			foreach ($list as $k=>$v){
-				$list[$k]['arcurl'] = U('Article/index',array('arcid'=>$v['arcid']));
+				$list[$k]['arcurl'] = U('blog/detail',array('arcid'=>$v['arcid']));
 				$list[$k]['colurl'] = U('Index/columns',array('colid'=>$v['colid']));
 				$list[$k]['commentnum'] = $this->getCommentNum($v['arcid']);
 				$list[$k]['createtime'] = date('Y-m-d',$v['createtime']);

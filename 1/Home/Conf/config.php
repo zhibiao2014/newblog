@@ -16,10 +16,10 @@ $config = array(
 	    
 	    '__CSSL__' => __ROOT__.'/Common/'.APP_NAME.'/css',
 	    '__JSL__' => __ROOT__.'/Common/'.APP_NAME.'/js',
-	    '__IMGL__' => __ROOT__.'Common/'.APP_NAME.'/images',
-	    '__STL__' => __ROOT__.'Common/'.APP_NAME.'/styles',
-	    '__ASS__' => __ROOT__.'Common/'.APP_NAME.'/assets',
-	    '__APP__' => __ROOT__.'Common/'.APP_NAME,
+	    '__IMGL__' => __ROOT__.'/Common/'.APP_NAME.'/images',
+	    '__STL__' => __ROOT__.'/Common/'.APP_NAME.'/styles',
+	    '__ASS__' => __ROOT__.'/Common/'.APP_NAME.'/assets',
+	    '__APP__' => __ROOT__.'/Common/'.APP_NAME,
 	),
 	'URL_ROUTER_ON' => false,
 	'URL_ROUTE_RULES' => array(
